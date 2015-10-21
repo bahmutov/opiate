@@ -8,7 +8,8 @@
     "lazy-ass": "0.6.0"
   },
   "devDependencies": {
-    "mocha": "2.3.3"
+    "mocha": "2.3.3",
+    "pre-git": "0.6.2"
   },
   "scripts": {
     "test": "mocha -R spec *-spec.js"
@@ -29,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/bahmutov/opiate/issues"
   },
-  "homepage": "https://github.com/bahmutov/opiate#readme"
+  "homepage": "https://github.com/bahmutov/opiate#readme",
+  "pre-commit": [
+    "npm test",
+    "npm version"
+  ]
 }
