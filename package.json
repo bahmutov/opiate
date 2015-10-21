@@ -9,10 +9,12 @@
   },
   "devDependencies": {
     "mocha": "2.3.3",
-    "pre-git": "0.6.2"
+    "pre-git": "0.6.2",
+    "webpack": "1.12.2"
   },
   "scripts": {
-    "test": "mocha -R spec *-spec.js"
+    "test": "mocha -R spec *-spec.js",
+    "build": "webpack opiate.js dist/opiate.js --display-modules"
   },
   "repository": {
     "type": "git",

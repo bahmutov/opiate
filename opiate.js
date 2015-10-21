@@ -4,4 +4,10 @@ function opiate(fn) {
     return heroin(fn, args)();
   };
 }
-module.exports = opiate;
+
+if (typeof window === 'object') {
+  window.opiate = opiate;
+}
+if (typeof module === 'object') {
+  module.exports = opiate;
+}
