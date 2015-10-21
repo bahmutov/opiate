@@ -1,0 +1,33 @@
+{
+  "name": "opiate",
+  "version": "1.0.0",
+  "description": "Curried, immediate version of dependency injection by argument name.",
+  "main": "opiate.js",
+  "dependencies": {
+    "heroin": "0.5.0",
+    "lazy-ass": "0.6.0"
+  },
+  "devDependencies": {
+    "mocha": "2.3.3"
+  },
+  "scripts": {
+    "test": "mocha -R spec *-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/opiate.git"
+  },
+  "keywords": [
+    "injection",
+    "dependency",
+    "partial",
+    "application",
+    "selective"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/opiate/issues"
+  },
+  "homepage": "https://github.com/bahmutov/opiate#readme"
+}
