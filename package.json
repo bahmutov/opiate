@@ -8,13 +8,16 @@
     "lazy-ass": "0.6.0"
   },
   "devDependencies": {
+    "commitizen": "2.4.1",
+    "cz-conventional-changelog": "1.1.4",
     "mocha": "2.3.3",
     "pre-git": "0.7.2",
     "webpack": "1.12.3"
   },
   "scripts": {
     "test": "mocha -R spec *-spec.js",
-    "build": "webpack opiate.js dist/opiate.js --display-modules"
+    "build": "webpack opiate.js dist/opiate.js --display-modules",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -39,5 +42,8 @@
   ],
   "pre-push": [],
   "post-commit": [],
-  "post-merge": []
+  "post-merge": [],
+  "commitizen": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
 }
