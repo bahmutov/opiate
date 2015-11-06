@@ -43,7 +43,7 @@
   "pre-push": [],
   "post-commit": [],
   "post-merge": [],
-  "commitizen": {
+  "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
   }
 }
