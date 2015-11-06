@@ -13,6 +13,11 @@ var wrappedAdd = opiate(add);
 wrappedAdd({ a: 10, b: 2 }); // 12
 ```
 
+## Development
+
+To commit into this repo, use command `npm run commit` which formats the commit
+message nicely.
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015
