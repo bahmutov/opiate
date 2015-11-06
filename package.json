@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "mocha": "2.3.3",
-    "pre-git": "0.6.2",
-    "webpack": "1.12.2"
+    "pre-git": "0.7.2",
+    "webpack": "1.12.3"
   },
   "scripts": {
     "test": "mocha -R spec *-spec.js",
@@ -36,5 +36,8 @@
   "pre-commit": [
     "npm test",
     "npm version"
-  ]
+  ],
+  "pre-push": [],
+  "post-commit": [],
+  "post-merge": []
 }
