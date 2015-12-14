@@ -19,6 +19,7 @@
     "test": "mocha -R spec *-spec.js",
     "build": "webpack opiate.js dist/opiate.js --display-modules",
     "commit": "git-cz",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -37,6 +38,10 @@
   "bugs": {
     "url": "https://github.com/bahmutov/opiate/issues"
   },
+  "files": [
+    "opiate.js",
+    "dist"
+  ],
   "homepage": "https://github.com/bahmutov/opiate#readme",
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
@@ -48,7 +53,9 @@
         "npm test",
         "npm version"
       ],
-      "pre-push": [],
+      "pre-push": [
+        "npm run size"
+      ],
       "post-commit": [],
       "post-merge": []
     }
